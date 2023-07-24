@@ -1,18 +1,25 @@
 <template>
-  <div class="app">我是app</div>
+  <div class="app">
+    <div class="content"></div>
+    <Footer />
+  </div>
 </template>
 
 <script>
 
+import Footer from '@/components/Footer/index'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Footer
+  }
 }
 </script>
 
-<style>
+<style lang="less" scoped>
 .app{
-  width: 160px;
-  height: 160px;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
 }
 </style>

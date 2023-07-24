@@ -1,4 +1,8 @@
+const { VantResolver } = require('unplugin-vue-components/resolvers');
+const ComponentsPlugin = require('unplugin-vue-components/webpack');
+
 module.exports = {
+  lintOnSave: false, // 取消eslint语法监听
   css: {
     loaderOptions: {
       postcss: {
@@ -10,5 +14,12 @@ module.exports = {
         ]
       }
     }
+  },
+  configureWebpack: {
+    plugins: [
+      ComponentsPlugin({
+        resolvers: [VantResolver()]
+      })
+    ]
   }
 }
