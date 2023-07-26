@@ -1,44 +1,32 @@
 <template>
-  <div>
-    <div>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
-      <van-button type="success" @click="toast">点击打印</van-button>
+  <div class="home">
+    <div class="content">
+      首页
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 
+import Footer from '@/components/Footer/index'
+
 export default {
-  setup() {
-    function toast () {
-      console.log('我是zbt')
-    }
-    return {
-      toast
-    }
-  },
+  components: {
+    Footer
+  }
 }
 </script>
+
+<style lang="less" scoped>
+.home{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .content{
+    flex: 1;
+    overflow: auto;
+    padding-bottom: 5px;
+  }
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div class="tabbar">
     <div class="item">
-      <router-link to='/home'>
+      <router-link to='/home' active-class="nav-color">
         <div class="tab">
           <van-icon name="wap-home-o" size="20" />
           首页
@@ -9,7 +9,7 @@
       </router-link>
     </div>
     <div class="item">
-      <router-link to='/cart'>
+      <router-link to='/cart' active-class="nav-color">
       <div class="tab">
         <van-icon name="cart-o" size="20" />
         购物车
@@ -17,7 +17,7 @@
       </router-link>
     </div>
     <div class="item">
-      <router-link to='/order'>
+      <router-link to='/order' active-class="nav-color">
         <div class="tab">
           <van-icon name="orders-o" size="20" />
           订单
@@ -25,7 +25,7 @@
       </router-link>
     </div>
     <div class="item">
-      <router-link to='/mine'>
+      <router-link to='/mine' active-class="nav-color">
         <div class="tab">
           <van-icon name="user-o" size="20" />
           我的
@@ -42,8 +42,12 @@
   justify-content: space-around;
   background-color: #fff;
   height: 22px;
+  border: 0.5px solid #eee;
   .item{
     font-size: 6px;
+    .nav-color{
+      color: rgb(221, 203, 40);
+    }
   }
   .tab{
     display: flex;
