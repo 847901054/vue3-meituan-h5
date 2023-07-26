@@ -2,6 +2,29 @@
   <div>
     <div>
       <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
+      <van-button type="success" @click="toast">点击打印</van-button>
     </div>
   </div>
 </template>

@@ -1,6 +1,8 @@
 <template>
-  <div class="app">
-    <div class="content"></div>
+  <div id="app">
+    <div class="content">
+      <router-view />
+    </div>
     <Footer />
   </div>
 </template>
@@ -18,8 +20,13 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.app{
+#app{
   display: flex;
   flex-direction: column;
+  .content{
+    height: calc(100% - 22px);
+    overflow: auto;
+    padding-bottom: 5px;
+  }
 }
 </style>
