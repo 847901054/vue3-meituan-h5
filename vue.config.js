@@ -8,7 +8,7 @@ module.exports = {
       postcss: {
         plugins: [
           require('postcss-pxtorem')({ // 把px单位换算成rem单位
-            rootValue: 16,
+            rootValue: 37.5,
             selectorBlackList: ["vant"], // 忽略转换正则匹配项
             propList: ['*']
           })

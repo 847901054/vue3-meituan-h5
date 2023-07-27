@@ -41,12 +41,11 @@
   align-items: center;
   justify-content: space-around;
   background-color: #fff;
-  height: 22px;
-  border: 0.5px solid #eee;
+  height: 50px;
+  border: 1px solid #eee;
   .item{
-    font-size: 6px;
     .nav-color{
-      color: rgb(221, 203, 40);
+      color: #fec22c;
     }
   }
   .tab{
@@ -54,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 6px;
+    font-size: 14px;
     letter-spacing: 1px;
   }
 }
