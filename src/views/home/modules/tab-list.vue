@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  import { useRouter, useRoute } from 'vue-router'
+  import { useRouter } from 'vue-router'
   import tabItem from './tab-item.vue'
   export default {
     components: {
@@ -15,7 +15,6 @@
     setup (props) {
       const data = props.value.data
       const router = useRouter() // 路由跳转方法
-      const route = useRoute() // 路由信息
       function toStroe (item) {
         router.push({
           path: '/store'

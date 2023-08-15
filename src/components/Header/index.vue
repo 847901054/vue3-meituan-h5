@@ -21,7 +21,6 @@ export default {
   setup (props) {
     const router = useRouter()
     const route = useRoute()
-    console.log(route)
     let navTitle = ref('')
     if (props.title) {
       navTitle = props.title
