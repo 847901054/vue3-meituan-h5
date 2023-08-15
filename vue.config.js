@@ -1,6 +1,5 @@
 const { VantResolver } = require('unplugin-vue-components/resolvers');
 const ComponentsPlugin = require('unplugin-vue-components/webpack');
-const ComponentsPlugin2 = require('unplugin-auto-import/webpack');
 
 module.exports = {
   lintOnSave: false, // 取消eslint语法监听
@@ -21,10 +20,6 @@ module.exports = {
     plugins: [
       ComponentsPlugin({
         resolvers: [VantResolver()]
-      }),
-      ComponentsPlugin2({
-        imports: ['vue', 'vue-router'], // 批量引入 页面内无需引入即可使用
-        eslintrc: {enabled: true}
       })
     ]
   }

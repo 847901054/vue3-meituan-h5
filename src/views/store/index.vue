@@ -11,11 +11,16 @@
 
 <script>
 
+import { useStore, mapState, mapMutations, mapActions, mapGetters } from 'vuex'
 import Header from '@/components/Header/index.vue'
 
 export default {
   components: {
     Header
+  },
+  setup () {
+    const store = useStore()
+    console.log(store.state.user.name)
   }
 }
 </script>

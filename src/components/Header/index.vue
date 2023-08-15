@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="left item" @click="onReturn">
-      <van-icon name="arrow-left" size="30" />
+      <van-icon name="arrow-left" size="26" />
     </div>
     <div class="title item">{{ navTitle }}</div>
     <div class="item">
@@ -41,7 +41,7 @@ export default {
 <style lang="less" scoped>
 .header{
   width: 100vw;
-  height: 1.5rem;
+  height: 1.2rem;
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -53,7 +53,7 @@ export default {
   padding: 0 .3125rem;
   .title{
     color: #000;
-    font-size: 0.5rem;
+    font-size: 0.45rem;
     font-weight: 600;
   }
   .item{
@@ -71,6 +71,6 @@ export default {
 }
 .block{
   width: 100vw;
-  height: 1.5rem;
+  height: 1.2rem;
 }
 </style>
