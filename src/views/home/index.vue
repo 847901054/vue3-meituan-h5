@@ -29,7 +29,7 @@
           <div v-for="(item, index) in big_sort" :key="index" class="nav-box">
             <div class="nav-icon">
               <svg class="icon" aria-hidden="true">
-                  <use :xlink:href="`#${item.icon}`"></use>
+                <use :xlink:href="`#${item.icon}`"></use>
               </svg>
             </div>
             <div class="nav-name">
@@ -42,7 +42,7 @@
           <div v-for="(item, index) in small_sort" :key="index" class="nav-box">
             <div class="nav-icon">
               <svg class="icon" aria-hidden="true">
-                  <use :xlink:href="`#${item.icon}`"></use>
+                <use :xlink:href="`#${item.icon}`"></use>
               </svg>
             </div>
             <div class="nav-name">
